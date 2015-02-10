@@ -4,5 +4,10 @@
     <string name="app_name">Study</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="LOGIN_ID">ID:</string>
+    <string name="LOGIN_PW">password:</string>
+    <string name="LOGIN_CB1">Rememer Password</string>
+    <string name="LOGIN_CB2">Auto-Login</string>
+    <string name="LOGIN_LOGBT">Log in</string>
 
 </resources>

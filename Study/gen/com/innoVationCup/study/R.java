@@ -23,17 +23,37 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int picture1=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int AUTOPWcheckbox=0x7f080006;
+        public static final int IDedittext=0x7f080002;
+        public static final int IDtextview=0x7f080001;
+        public static final int LOGINbutton=0x7f080007;
+        public static final int LOGtextview=0x7f080009;
+        public static final int PWedittext=0x7f080004;
+        public static final int PWsavebox=0x7f080005;
+        public static final int PWtextview=0x7f080003;
+        public static final int action_settings=0x7f08000b;
+        public static final int cancel=0x7f08000a;
+        public static final int progressBar=0x7f080008;
+        public static final int quitbutton=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int login=0x7f030001;
+        public static final int mainpage=0x7f030002;
+        public static final int waiting=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
     }
     public static final class string {
+        public static final int LOGIN_CB1=0x7f050005;
+        public static final int LOGIN_CB2=0x7f050006;
+        public static final int LOGIN_ID=0x7f050003;
+        public static final int LOGIN_LOGBT=0x7f050007;
+        public static final int LOGIN_PW=0x7f050004;
         public static final int action_settings=0x7f050002;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;

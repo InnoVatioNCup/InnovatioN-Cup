@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+         <ImageButton
+            android:id="@+id/quitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/picture1"
+            />
+        
+        <TextView
+            android:id="@+id/IDtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="@string/LOGIN_ID"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/IDedittext"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_below="@id/IDtextview"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:inputType="none"/>
+        
+        
+        <TextView
+            android:id="@+id/PWtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_below="@id/IDedittext"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="@string/LOGIN_PW"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/PWedittext"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_below="@id/PWtextview"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:maxLines="200"
+            android:inputType="textPassword"
+            android:scrollHorizontally="true" />
+
+        <CheckBox
+            android:id="@+id/PWsavebox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PWedittext"
+            android:text="@string/LOGIN_CB1"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/AUTOPWcheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PWsavebox"
+            android:text="@string/LOGIN_CB2"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/LOGINbutton"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/AUTOPWcheckbox"
+            android:gravity="center"
+            android:text="@string/LOGIN_LOGBT"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        
+       
+
+    </RelativeLayout>
+
+</LinearLayout>
