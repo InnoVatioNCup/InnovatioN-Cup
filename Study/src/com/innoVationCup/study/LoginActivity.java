@@ -33,10 +33,10 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        /*this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         this.setContentView(Window.FEATURE_NO_TITLE);
-        this.setContentView(Window.FEATURE_LEFT_ICON);
+        this.setContentView(Window.FEATURE_LEFT_ICON);*/
         setContentView(R.layout.login);
         
         LOGIN_button = (Button) findViewById(R.id.LOGINbutton);
@@ -65,7 +65,7 @@ public class LoginActivity extends Activity {
           	Password.setText(IDPW_Save_Xml.getString("PassWord", ""));
           	if(IDPW_Save_Xml.getBoolean("AUTOLOG", false)){
           		Auto_Log.setChecked(true);
-          		Intent jump = new Intent(getApplicationContext(),WaitActivity.class);
+          		Intent jump = new Intent(LoginActivity.this,WaitActivity.class);
           		LoginActivity.this.startActivity(jump);
           	}	
           }
@@ -73,14 +73,13 @@ public class LoginActivity extends Activity {
     
     private void loginlistener(){
     	LOGIN_button.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				ID_string = ID.getText().toString();
 				PW_string = Password.getText().toString();
 				if(ID_string.equals("admin")&&PW_string.equals("admin")){
 					Toast toast;
-					toast = Toast.makeText(getApplicationContext(), "Log Success", Toast.LENGTH_SHORT);
+					toast = Toast.makeText(LoginActivity.this, "Log Success", Toast.LENGTH_SHORT);
 					toast.show();
 					if(IDPW_Save.isChecked()){
 						Editor edit =IDPW_Save_Xml.edit();
@@ -88,11 +87,11 @@ public class LoginActivity extends Activity {
 						edit.putString("PW", PW_string);
 						edit.commit();
 					}
-					Intent jump = new Intent(getApplicationContext(),WaitActivity.class);
-					getApplicationContext().startActivity(jump);
+					Intent jump = new Intent(LoginActivity.this,WaitActivity.class);
+					LoginActivity.this.startActivity(jump);
 				}else{
 					Toast toast_unsuccess;
-					toast_unsuccess = Toast.makeText(getApplicationContext(), "Log fail",Toast.LENGTH_SHORT);
+					toast_unsuccess = Toast.makeText(LoginActivity.this, "Log fail",Toast.LENGTH_SHORT);
 					toast_unsuccess.show();
 				}
 				
@@ -142,13 +141,14 @@ public class LoginActivity extends Activity {
 		});
     }
     
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -160,4 +160,5 @@ public class LoginActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    */
 }

@@ -22,7 +22,7 @@ public class WaitActivity extends Activity{
 		
 		cancelbutton = (Button) findViewById(R.id.cancel);
 		
-		Intent jump = new Intent(getApplicationContext(),mainActivity.class);
+		Intent jump = new Intent(WaitActivity.this,MainActivity.class);
 		this.startActivity(jump);
 		
 		cancelbutton.setOnClickListener(new OnClickListener() {

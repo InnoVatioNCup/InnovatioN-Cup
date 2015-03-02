@@ -3,7 +3,7 @@ package com.innoVationCup.study;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class mainActivity extends Activity{
+public class MainActivity extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState){

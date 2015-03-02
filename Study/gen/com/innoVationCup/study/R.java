@@ -49,14 +49,16 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int LOGIN_CB1=0x7f050005;
-        public static final int LOGIN_CB2=0x7f050006;
-        public static final int LOGIN_ID=0x7f050003;
-        public static final int LOGIN_LOGBT=0x7f050007;
-        public static final int LOGIN_PW=0x7f050004;
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int LOGIN_CB1=0x7f050007;
+        public static final int LOGIN_CB2=0x7f050008;
+        public static final int LOGIN_ID=0x7f050005;
+        public static final int LOGIN_LOGBT=0x7f050009;
+        public static final int LOGIN_PW=0x7f050006;
+        public static final int action_settings=0x7f050004;
+        public static final int activity_login=0x7f050001;
+        public static final int activity_main=0x7f050002;
+        public static final int activity_wait=0x7f050000;
+        public static final int hello_world=0x7f050003;
     }
     public static final class style {
         /** 
